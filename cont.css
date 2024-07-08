@@ -1,0 +1,180 @@
+.main-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.up, .down {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.card1, .card2, .card3, .card4 {
+    width: 100px;
+    height: 100px;
+    outline: none;
+    border: none;
+    background: #caaec2;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .2s ease-in-out;
+}
+
+.card1 {
+    border-radius: 90px 5px 5px 5px;
+}
+
+.card2 {
+    border-radius: 5px 90px 5px 5px;
+}
+
+.card3 {
+    border-radius: 5px 5px 5px 90px;
+}
+
+.card4 {
+    border-radius: 5px 5px 90px 5px;
+}
+
+.instagram, .facebook, .whatsapp, .gmail {
+    margin-top: 1.5em;
+    margin-left: 1.2em;
+}
+
+.instagram {
+    fill: #cc39a4;
+}
+
+.facebook {
+    fill: #03A9F4;
+}
+
+.whatsapp {
+    margin-top: -.6em;
+    fill: #00ff00;
+}
+
+.gmail {
+    margin-top: -.9em;
+    fill: #f14336;
+}
+
+.card1:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #cc39a4;
+}
+
+.card1:hover .instagram {
+    fill: white;
+}
+
+.card2:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #1877f2;
+}
+
+.card2:hover .facebook {
+    fill: white;
+}
+
+.card3:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #00ff00;
+}
+
+.card3:hover .whatsapp {
+    fill: white;
+}
+
+.card4:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: #FF0004;
+}
+
+.card4:hover .gmail {
+    fill: white;
+}
+
+
+/* === removing default button style ===*/
+.button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #37FF8B;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
+  .animated-text {
+    font-size: 2em;
+    font-weight: bold;
+    animation: bounce 1.5s infinite;
+    margin-top: 100px;
+   text-align: center;
+
+    
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+body, html {
+    height: 100%;
+   
+  
+}
