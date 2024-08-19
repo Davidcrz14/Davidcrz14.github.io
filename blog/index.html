@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head><script src="../color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.122.0">
+    <title>Blog Personal</title>
+    <link rel="icon" href="../codigo.png" type="image/x-icon">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/blog/">
+
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+<link href="../bootstrap.min.css" rel="stylesheet">
+
+
+
+
+
+    <link href="blog.css" rel="stylesheet">
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z"/>
+        <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+      </symbol>
+    </svg>
+
+    <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+      <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center"
+              id="bd-theme"
+              type="button"
+              aria-expanded="false"
+              data-bs-toggle="dropdown"
+              aria-label="Toggle theme (auto)">
+        <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#circle-half"></use></svg>
+        <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
+      </button>
+      <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
+            Light
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
+            Dark
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+        <li>
+          <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#circle-half"></use></svg>
+            Auto
+            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
+          </button>
+        </li>
+      </ul>
+    </div>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <symbol id="aperture" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10"/>
+    <path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/>
+  </symbol>
+  <symbol id="cart" viewBox="0 0 16 16">
+    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+  <symbol id="chevron-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+  </symbol>
+</svg>
+
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="https://Davidcrz14.github.io" style="font-size: 19px;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 2 16 16">
+                        <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                    </svg>
+                    Home
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="https://github.com/Davidcrz14">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                                    <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://davidcrz14.github.io/contacto.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                                    <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5m.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1z"/>
+                                </svg>
+                                Contacto
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="https://davidcrz14.github.io/hobbies.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-yin-yang" viewBox="0 0 16 16">
+                              <path d="M9.167 4.5a1.167 1.167 0 1 1-2.334 0 1.167 1.167 0 0 1 2.334 0"/>
+                              <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M1 8a7 7 0 0 1 7-7 3.5 3.5 0 1 1 0 7 3.5 3.5 0 1 0 0 7 7 7 0 0 1-7-7m7 4.667a1.167 1.167 0 1 1 0-2.334 1.167 1.167 0 0 1 0 2.334"/>
+                            </svg>
+                              Hobbies
+                          </a>
+                      </li>
+                        <li class="nav-item">
+                          <a class="nav-link active" href="https://davidcrz14.github.io/blog/index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-substack" viewBox="0 0 16 16">
+                              <path d="M15 3.604H1v1.891h14v-1.89ZM1 7.208V16l7-3.926L15 16V7.208zM15 0H1v1.89h14z"/>
+                            </svg>
+                            Blog
+                          </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share" viewBox="0 0 16 16">
+                                    <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.5 2.5 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5m-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3m11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3"/>
+                                </svg>
+                                Share
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="https://www.facebook.com/sharer/sharer.php?u=https://Davidcrz14.github.io" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                        </svg>
+                                        Facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="https://twitter.com/intent/tweet?url=https://Davidcrz14.github.io&text=Mira%20esta%20pagina" target="_blank">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                        </svg>
+                                        Twitter.
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <img src="../pop.gif" alt="asd" style="width: 60px;" class="rounded-circle img-fluid">
+                </div>
+            </div>
+        </nav>
+
+<main class="container" style="margin-top: 40px;">
+  <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary d-flex align-items-center">
+    <div class="col-lg-6 px-0 me-auto">
+      <h1 class="display-4 fst-italic">¿Qué es la vida?</h1>
+      <p class="lead my-3">El existencialismo: una idea que va más allá del '¿Quién soy?'</p>
+      <a style="text-decoration: none; color: skyblue;" href="https://davidcrz14.github.io/blog/life.html"><p>Leer monologo...</p></a>
+    </div>
+    <div class="ms-auto">
+      <img src="https://w.wallhaven.cc/full/jx/wallhaven-jxqml5.jpg" alt="Existencialismo" class="rounded-circle img-fluid" style="width: 200px; height: 200px; object-fit: cover;">
+    </div>
+  </div>
+
+
+  <div class="row mb-2">
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-primary-emphasis">Tendencias</strong>
+          <h3 class="mb-0">Aplicaciones Móviles</h3>
+          <div class="mb-1 text-body-secondary">Hoy</div>
+          <p class="card-text mb-auto">La demanda de aplicaciones móviles seguirá creciendo, con un enfoque en la usabilidad, la seguridad y la integración con otras tecnologías.</p>
+          <a href="https://davidcrz14.github.io/blog/blog.html" class="icon-link gap-1 icon-link-hover stretched-link">
+            Seguir Leyendo
+            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static">
+          <strong class="d-inline-block mb-2 text-success-emphasis">IA</strong>
+          <h3 class="mb-0">Machine Learning</h3>
+          <div class="mb-1 text-body-secondary">Hoy</div>
+          <p class="mb-auto">La inteligencia artificial y el aprendizaje automático continuarán siendo una tendencia importante en 2024.</p>
+          <a href="https://davidcrz14.github.io/blog/blog.html" class="icon-link gap-1 icon-link-hover stretched-link">
+            Continuar Leyendo
+            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row g-5">
+    <div class="col-md-8">
+      <h3 class="pb-4 mb-4 fst-italic border-bottom">
+        Introducción a Machine Learning
+      </h3>
+
+      <article class="blog-post">
+        <h2 class="display-5 link-body-emphasis mb-1">Introducción a Machine Learning</h2>
+        <p class="blog-post-meta">11/07/2024 <a href="#">DavC</a></p>
+
+        <p>¿Qué es el Machine Learning?</p>
+        <hr>
+        <p>El Machine Learning, o aprendizaje automático, es una rama de la inteligencia artificial (IA) que permite a las máquinas aprender de los datos y mejorar su desempeño con el tiempo sin ser explícitamente programadas para cada tarea. En lugar de seguir instrucciones predefinidas, los algoritmos de Machine Learning utilizan patrones y experiencias pasadas para tomar decisiones o realizar predicciones.</p>
+
+        <h2>¿Cómo Funciona el Machine Learning?</h2>
+        <blockquote class="blockquote">
+            <p>El proceso de Machine Learning generalmente sigue estos pasos:</p>
+        </blockquote>
+        <ol>
+            <li><strong>Recopilación de Datos:</strong> Se recolectan datos relevantes para el problema que se quiere resolver. Estos datos pueden provenir de diversas fuentes, como bases de datos, archivos de texto, sensores, entre otros.</li>
+            <li><strong>Preparación de Datos:</strong> Los datos se limpian y se transforman para que sean adecuados para el análisis. Esto incluye el manejo de valores faltantes, la normalización y la eliminación de datos redundantes.</li>
+            <li><strong>Selección del Modelo:</strong> Se elige un algoritmo de Machine Learning adecuado para el problema. Algunos de los algoritmos más comunes incluyen regresión lineal, árboles de decisión, redes neuronales, entre otros.</li>
+            <li><strong>Entrenamiento del Modelo:</strong> El modelo se entrena utilizando un conjunto de datos conocido como conjunto de entrenamiento. Durante este proceso, el modelo aprende a identificar patrones en los datos.</li>
+            <li><strong>Evaluación del Modelo:</strong> Una vez entrenado, el modelo se evalúa utilizando un conjunto de datos de prueba para verificar su precisión y capacidad de generalización.</li>
+            <li><strong>Ajuste del Modelo:</strong> Basado en la evaluación, se ajustan los parámetros del modelo para mejorar su desempeño.</li>
+            <li><strong>Predicción:</strong> El modelo entrenado y ajustado se utiliza para hacer predicciones o tomar decisiones basadas en nuevos datos.</li>
+        </ol>
+
+        <h2>Tipos de Machine Learning</h2>
+        <p>Existen varios tipos de Machine Learning, cada uno adecuado para diferentes tipos de problemas:</p>
+        <ul>
+            <li><strong>Aprendizaje Supervisado:</strong> El algoritmo aprende a partir de un conjunto de datos etiquetados, donde las respuestas correctas son conocidas. Ejemplos incluyen la regresión y la clasificación.</li>
+            <li><strong>Aprendizaje No Supervisado:</strong> El algoritmo trata de encontrar patrones en los datos sin etiquetas predefinidas. Ejemplos incluyen el clustering y la reducción de dimensionalidad.</li>
+            <li><strong>Aprendizaje por Refuerzo:</strong> El algoritmo aprende a tomar decisiones mediante prueba y error, recibiendo recompensas o penalizaciones en función de las acciones tomadas.</li>
+        </ul>
+
+        <h2>Aplicaciones del Machine Learning</h2>
+        <p>El Machine Learning se aplica en una amplia variedad de campos, incluyendo:</p>
+        <ul>
+            <li><strong>Reconocimiento de Imágenes:</strong> Clasificación de imágenes, detección de objetos y reconocimiento facial.</li>
+            <li><strong>Procesamiento de Lenguaje Natural (NLP):</strong> Traducción automática, análisis de sentimientos y chatbots.</li>
+            <li><strong>Finanzas:</strong> Predicción de precios de acciones, detección de fraudes y análisis de riesgos.</li>
+            <li><strong>Salud:</strong> Diagnóstico de enfermedades, personalización de tratamientos y análisis de imágenes médicas.</li>
+            <li><strong>Automóviles Autónomos:</strong> Navegación y toma de decisiones en tiempo real.</li>
+        </ul>
+
+        <h2>Herramientas y Bibliotecas Populares</h2>
+        <p>Existen muchas herramientas y bibliotecas que facilitan el desarrollo de modelos de Machine Learning, entre las más populares se encuentran:</p>
+        <ul>
+            <li><strong>Scikit-Learn:</strong> Una biblioteca de Machine Learning en Python que proporciona herramientas simples y eficientes para el análisis de datos.</li>
+            <li><strong>TensorFlow:</strong> Una plataforma de código abierto para la creación y entrenamiento de modelos de Machine Learning desarrollada por Google.</li>
+            <li><strong>PyTorch:</strong> Una biblioteca de Machine Learning desarrollada por Facebook, conocida por su flexibilidad y facilidad de uso.</li>
+        </ul>
+
+        <h4>Sin más, me despido</h4>
+    </article>
+
+
+
+
+
+
+
+    </div>
+
+    <div class="col-md-4">
+      <div class="position-sticky" style="top: 2rem;">
+        <div class="p-4 mb-3 bg-body-tertiary rounded">
+          <h4 class="fst-italic">Mas Fuentes</h4>
+         <a href="https://www.ibm.com/es-es/topics/machine-learning"><p class="mb-0">https://www.ibm.com/es-es/topics/machine-learning</p></a>
+        </div>
+<!--
+        <div>
+          <h4 class="fst-italic">Post Recientes</h4>
+          <ul class="list-unstyled">
+             <li>
+              <a class="d-flex flex-column flex-lg-row gap-3 align-items-start align-items-lg-center py-3 link-body-emphasis text-decoration-none border-top" href="#">
+                <svg class="bd-placeholder-img" width="100%" height="96" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                <div class="col-lg-8">
+                  <h6 class="mb-0">Example blog post title</h6>
+                  <small class="text-body-secondary">January 15, 2024</small>
+                </div>
+              </a>
+            </li> -->
+
+          </ul>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="py-5 text-center text-body-secondary bg-body-tertiary">
+  <p>Desarrollado por DavC@©️</p>
+
+</footer>
+<script src="../bootstrap.bundle.min.js"></script>
+
+    </body>
+</html>
